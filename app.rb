@@ -13,8 +13,7 @@ class App < Sinatra::Base
 
   get '/say/:number/:phrase' do
     number = params[:number].to_i
-    number * params[:phrase]
-    binding.pry
+    params[:phrase] * number #I don't think you can multiply a string by an integer 
   end
 
 end
