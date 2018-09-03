@@ -6,10 +6,10 @@ class App < Sinatra::Base
     params[:name].reverse
   end
 
-  get '/square/:number' do 
+  get '/square/:number' do
     square = params[:number].to_i * params[:number].to_i
     square.to_s
-  end 
+  end
 
-  
+
 end
